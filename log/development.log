@@ -1,0 +1,30 @@
+Started GET "/" for ::1 at 2020-11-01 14:29:59 +0300
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/D/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/D/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.8ms | Allocations: 409)
+Completed 200 OK in 38ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 2367)
+
+
+Started GET "/" for ::1 at 2020-11-01 16:03:11 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 1798)
+
+
+  
+ActionView::MissingTemplate (Missing template application/hello with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/D/Documents/IT/Ruby/firstWork/helloApp/app/views"
+  * "/Users/D/.rvm/gems/ruby-2.7.1/gems/actiontext-6.0.3.4/app/views"
+  * "/Users/D/.rvm/gems/ruby-2.7.1/gems/actionmailbox-6.0.3.4/app/views"
+):
+  
+app/controllers/application_controller.rb:4:in `hello'
+Started GET "/" for ::1 at 2020-11-01 16:04:24 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 612)
+
+
